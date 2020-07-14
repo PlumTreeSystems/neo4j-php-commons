@@ -49,11 +49,11 @@ class SchemaDefinition
     }
 
     /**
-     * Returns whether or not the Schema contains an Index for the given <code>Label</code> and <code>property</code> combination.
-     *
+     * Returns whether or not the Schema contains an Index
+     * for the given <code>Label</code> and <code>property</code> combination.
      * @param Label  $label
      * @param string $property
-     * 
+     *
      * @return bool
      */
     public function hasIndex(Label $label, $property)

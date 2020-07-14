@@ -31,6 +31,4 @@ class RecordCursor extends AbstractRecordCursor
     {
         // TODO: Implement firstRecordOrDefault() method.
     }
-
-
 }

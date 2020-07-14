@@ -29,8 +29,8 @@ class ResultCollectionTest extends \PHPUnit_Framework_TestCase
 
     public function testCollectionParseTags()
     {
-        $statement1 = Statement::create("MATCH (n) RETURN count(n)", array(), 'tag1');
-        $statement2 = Statement::create("CREATE (n:Node)", array(), 'tag2');
+        $statement1 = Statement::create("MATCH (n) RETURN count(n)", [], 'tag1');
+        $statement2 = Statement::create("CREATE (n:Node)", [], 'tag2');
         $result1 = new RecordCursor($statement1);
         $result2 = new RecordCursor($statement2);
 
@@ -43,8 +43,8 @@ class ResultCollectionTest extends \PHPUnit_Framework_TestCase
 
     public function testCollectionOfResultsIsTraversable()
     {
-        $statement1 = Statement::create("MATCH (n) RETURN count(n)", array(), 'tag1');
-        $statement2 = Statement::create("CREATE (n:Node)", array(), 'tag2');
+        $statement1 = Statement::create("MATCH (n) RETURN count(n)", [], 'tag1');
+        $statement2 = Statement::create("CREATE (n:Node)", [], 'tag2');
         $result1 = new RecordCursor($statement1);
         $result2 = new RecordCursor($statement2);
 

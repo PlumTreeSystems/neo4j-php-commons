@@ -42,7 +42,7 @@ interface Record
      * Retrieve the value for the given <code>key</code>.
      *
      * @param string $key          The identifier key
-     * @param mixed  $defaultValue A default value to return in case the record doesn't contains the given <code>key</code>.
+     * @param mixed  $defaultValue A default value to return in case the record doesn't contains the given key.
      *
      * @return mixed
      */
@@ -58,8 +58,8 @@ interface Record
     public function hasValue($key);
 
     /**
-     * Same as <code>value($key)</code> but will return the value as a <code>NodeInterface</code> object if the type of the
-     * value is a <code>Node</code>, throws an exception otherwise.
+     * Same as <code>value($key)</code> but will return the value as a NodeInterface object if the type of the
+     * value is a Node, throws an exception otherwise.
      *
      * @param string $key
      *
@@ -68,8 +68,8 @@ interface Record
     public function nodeValue($key);
 
     /**
-     * Same as <code>value($key)</code> but will return the value as a <code>RelationshipInterface</code> object if the type of the
-     * value is a <code>Relationship</code>, throws an exception otherwise.
+     * Same as <code>value($key)</code> but will return the value as a RelationshipInterface object if the type of the
+     * value is a Relationship, throws an exception otherwise.
      *
      * @param string $key
      *
@@ -78,8 +78,8 @@ interface Record
     public function relationshipValue($key);
 
     /**
-     * Same as <code>value($key)</code> but will return the value as a <code>PathInterface</code> object if the type of the
-     * value is a <code>Path</code>, throws an exception otherwise.
+     * Same as <code>value($key)</code> but will return the value as a PathInterface object if the type of the
+     * value is a Path, throws an exception otherwise.
      *
      * @param string $key
      *

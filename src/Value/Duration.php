@@ -88,5 +88,4 @@ class Duration implements TypeDuration
     {
         return $this->nanoSeconds;
     }
-
 }

@@ -48,6 +48,6 @@ class PropertyBagUnitTest extends \PHPUnit_Framework_TestCase
 
     protected function getProperties()
     {
-        return array("id" => 1, "name" => "Michael");
+        return ["id" => 1, "name" => "Michael"];
     }
 }

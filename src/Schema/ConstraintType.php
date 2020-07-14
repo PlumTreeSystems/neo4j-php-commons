@@ -24,6 +24,7 @@ class ConstraintType extends Enum
     /**
      * @return ConstraintType
      */
+    // phpcs:ignore
     public static function UNIQUENESS()
     {
         return new self(self::UNIQUENESS);
@@ -32,6 +33,7 @@ class ConstraintType extends Enum
     /**
      * @return ConstraintType
      */
+    // phpcs:ignore
     public static function NODE_PROPERTY_EXISTENCE()
     {
         return new self(self::NODE_PROPERTY_EXISTENCE);
@@ -40,6 +42,7 @@ class ConstraintType extends Enum
     /**
      * @return ConstraintType
      */
+    // phpcs:ignore
     public static function RELATIONSHIP_PROPERTY_EXISTENCE()
     {
         return new self(self::RELATIONSHIP_PROPERTY_EXISTENCE);

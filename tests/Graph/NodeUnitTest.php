@@ -40,7 +40,7 @@ class NodeUnitTest extends \PHPUnit_Framework_TestCase
 
     public function testNodeWithLabels()
     {
-        $node = new Node(1, array("User", "Person"));
+        $node = new Node(1, ["User", "Person"]);
         $this->assertCount(2, $node->getLabels());
         $this->assertInstanceOf(Label::class, $node->getLabels()[0]);
         $this->assertEquals("User", $node->getLabels()[0]);
@@ -60,6 +60,6 @@ class NodeUnitTest extends \PHPUnit_Framework_TestCase
     {
         $rels = [1];
         $this->setExpectedException(InvalidArgumentException::class);
-        $node = new Node(1, array(), $rels);
+        $node = new Node(1, [], $rels);
     }
 }

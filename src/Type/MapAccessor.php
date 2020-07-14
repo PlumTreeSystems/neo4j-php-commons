@@ -57,11 +57,12 @@ interface MapAccessor
     public function hasValue($key);
 
     /**
+     * phpcs:ignore
      * Returns the value for the given key, throws an exception if the key doesn't exist or returns the default given value if passed.
      *
      * @param string $key
      * @param mixed  $default
-     * 
+     *
      * @return mixed
      *
      * @throws \InvalidArgumentException

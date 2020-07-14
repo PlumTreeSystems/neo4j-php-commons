@@ -39,5 +39,4 @@ abstract class AbstractCollection implements CollectionInterface
     {
         return $this->elements;
     }
-
 }

@@ -14,5 +14,4 @@ interface Date
      * @return int
      */
     public function getDaysSinceEpoch(): int;
-   
 }

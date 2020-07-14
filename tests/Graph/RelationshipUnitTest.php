@@ -28,7 +28,12 @@ class RelationshipUnitTest extends \PHPUnit_Framework_TestCase
 {
     public function testNewInstance()
     {
-        $rel = new Relationship(rand(), RelationshipType::withName("RELATES"), $this->getRandomNode(), $this->getRandomNode());
+        $rel = new Relationship(
+            rand(),
+            RelationshipType::withName("RELATES"),
+            $this->getRandomNode(),
+            $this->getRandomNode()
+        );
         $this->assertInstanceOf(RelationshipInterface::class, $rel);
         $this->assertInstanceOf(PropertyBagInterface::class, $rel);
         $this->assertInternalType('integer', $rel->getId());

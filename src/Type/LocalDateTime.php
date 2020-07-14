@@ -14,4 +14,3 @@ interface LocalDateTime
      */
     public function getNanoseconds(): int;
 }
-   

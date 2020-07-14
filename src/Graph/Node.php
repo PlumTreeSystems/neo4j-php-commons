@@ -36,7 +36,7 @@ class Node extends PropertyBag implements NodeInterface
      * @param array $labels
      * @param array $relationships
      */
-    public function __construct($id, array $labels = array(), array $relationships = array())
+    public function __construct($id, array $labels = [], array $relationships = [])
     {
         $this->id = $id;
 
@@ -46,7 +46,12 @@ class Node extends PropertyBag implements NodeInterface
 
         foreach ($relationships as $relationship) {
             if (!$relationship instanceof RelationshipInterface) {
-                throw new \InvalidArgumentException(sprintf('Relationship must implement RelationshipInterface, "%s" given', json_encode($relationship)));
+                throw new \InvalidArgumentException(
+                    sprintf(
+                        'Relationship must implement RelationshipInterface, "%s" given',
+                        json_encode($relationship)
+                    )
+                );
             }
 
             $this->relationships[] = $relationship;

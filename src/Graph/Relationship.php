@@ -39,8 +39,13 @@ class Relationship extends PropertyBag implements RelationshipInterface
      * @param NodeInterface    $startNode
      * @param NodeInterface    $endNode
      */
-    public function __construct($id, RelationshipType $relationshipType, NodeInterface $startNode, NodeInterface $endNode)
-    {
+    public function __construct(
+        $id,
+        RelationshipType $relationshipType,
+        NodeInterface $startNode,
+        NodeInterface
+        $endNode
+    ) {
         $this->id = $id;
         $this->type = $relationshipType;
         $this->startNode = $startNode;
@@ -118,7 +123,7 @@ class Relationship extends PropertyBag implements RelationshipInterface
      */
     public function getNodes()
     {
-        return array($this->startNode, $this->endNode);
+        return [$this->startNode, $this->endNode];
     }
 
     /**

@@ -28,7 +28,7 @@ class RelationshipType
 
     /**
      * @param string $name
-     * 
+     *
      * @return RelationshipType
      */
     public static function withName($name)

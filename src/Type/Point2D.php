@@ -18,5 +18,4 @@ interface Point2D
      * @return int
      */
     public function getSrid(): int;
-
 }

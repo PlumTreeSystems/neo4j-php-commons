@@ -44,5 +44,4 @@ class LocalTime implements DateTimeConvertible, TypeLocalTime
     {
         return $this->nanoSecondsSinceMidnight;
     }
-    
 }

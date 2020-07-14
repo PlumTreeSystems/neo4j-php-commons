@@ -76,7 +76,7 @@ class StatementStatistics implements StatementStatisticsInterface
     /**
      * @param array $statistics
      */
-    public function __construct(array $statistics = array())
+    public function __construct(array $statistics = [])
     {
         $keys = [
             'contains_updates', 'nodes_created', 'nodes_deleted', 'properties_set', 'labels_added', 'labels_removed',

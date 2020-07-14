@@ -51,7 +51,7 @@ interface TransactionInterface
      * @param array       $parameters
      * @param null|string $tag
      */
-    public function push($statement, array $parameters = array(), $tag = null);
+    public function push($statement, array $parameters = [], $tag = null);
 
     public function begin();
 

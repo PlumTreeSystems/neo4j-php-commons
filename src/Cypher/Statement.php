@@ -43,9 +43,15 @@ class Statement implements StatementInterface
      * @param array       $parameters
      * @param string|null $tag
      * @param StatementType
+     * @param array $metaData
      */
-    private function __construct($text, array $parameters = [], $tag = null, StatementType $statementType, $metaData)
-    {
+    private function __construct(
+        $text,
+        array $parameters,
+        $tag,
+        StatementType $statementType,
+        $metaData
+    ) {
         $this->text = (string) $text;
         $this->parameters = $parameters;
         $this->type = $statementType;
@@ -64,10 +70,21 @@ class Statement implements StatementInterface
      *
      * @return Statement
      */
-    public static function create($text, array $parameters = [], $tag = null, $statementType = StatementType::READ_WRITE, $metaData = [])
-    {
+    public static function create(
+        $text,
+        array $parameters = [],
+        $tag = null,
+        $statementType = StatementType::READ_WRITE,
+        $metaData = []
+    ) {
         if (!StatementType::isValid($statementType)) {
-            throw new \InvalidArgumentException(sprintf('Value %s is invalid as statement type, possible values are %s', $statementType, json_encode(StatementType::keys())));
+            throw new \InvalidArgumentException(
+                sprintf(
+                    'Value %s is invalid as statement type, possible values are %s',
+                    $statementType,
+                    json_encode(StatementType::keys())
+                )
+            );
         }
         $type = new StatementType($statementType);
 
@@ -169,5 +186,4 @@ class Statement implements StatementInterface
     {
         return $this->metaData;
     }
-
 }

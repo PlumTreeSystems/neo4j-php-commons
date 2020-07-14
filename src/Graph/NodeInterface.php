@@ -52,7 +52,7 @@ interface NodeInterface extends PropertyBagInterface
 
     /**
      * Add a relationship to the Node.
-     * 
+     *
      * @param RelationshipInterface $relationship
      */
     public function addRelationship(RelationshipInterface $relationship);

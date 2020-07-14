@@ -70,7 +70,7 @@ interface RelationshipInterface extends PropertyBagInterface
      * Returns whether or not the Relationship is of the given <code>relationshipType</code>.
      *
      * @param RelationshipType $relationshipType
-     * 
+     *
      * @return bool
      */
     public function isType(RelationshipType $relationshipType);

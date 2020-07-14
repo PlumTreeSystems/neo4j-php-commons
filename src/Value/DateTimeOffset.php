@@ -68,5 +68,4 @@ class DateTimeOffset implements DateTimeConvertible, TypeDateTimeOffset
     {
         return $this->zoneOffset;
     }
-
 }

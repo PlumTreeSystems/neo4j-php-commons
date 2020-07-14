@@ -23,5 +23,4 @@ interface Point3D
      * @return int
      */
     public function getSrid(): int;
-
 }

@@ -74,7 +74,13 @@ abstract class AbstractRecordView implements RecordViewInterface
     public function value($key)
     {
         if (!array_key_exists($key, $this->values)) {
-            throw new \InvalidArgumentException(sprintf('No value with key "%s" in RecordView, possible keys are %s', $key, json_encode($this->keys)));
+            throw new \InvalidArgumentException(
+                sprintf(
+                    'No value with key "%s" in RecordView, possible keys are %s',
+                    $key,
+                    json_encode($this->keys)
+                )
+            );
         }
 
         return $this->values[$key];
@@ -88,7 +94,13 @@ abstract class AbstractRecordView implements RecordViewInterface
     public function valueByIndex($index)
     {
         if (!array_key_exists($index, $this->indexMap)) {
-            throw new \InvalidArgumentException(sprintf('No value with index "%d" in RecordView, possible indexes are %s', $index, json_encode($this->keys)));
+            throw new \InvalidArgumentException(
+                sprintf(
+                    'No value with index "%d" in RecordView, possible indexes are %s',
+                    $index,
+                    json_encode($this->keys)
+                )
+            );
         }
 
         return $this->values[$this->indexMap[$index]];

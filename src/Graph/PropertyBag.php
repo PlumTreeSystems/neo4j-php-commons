@@ -25,7 +25,7 @@ class PropertyBag implements PropertyBagInterface
     /**
      * @param array $properties
      */
-    public function __construct(array $properties = array())
+    public function __construct(array $properties = [])
     {
         $this->properties = $properties;
     }

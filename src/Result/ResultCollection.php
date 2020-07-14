@@ -63,7 +63,9 @@ class ResultCollection implements \Iterator
             return $default;
         }
 
-        throw new \InvalidArgumentException(sprintf('This result collection does not contains a Result for tag "%s"', $tag));
+        throw new \InvalidArgumentException(
+            sprintf('This result collection does not contains a Result for tag "%s"', $tag)
+        );
     }
 
     /**

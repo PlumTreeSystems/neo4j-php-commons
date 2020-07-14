@@ -54,7 +54,7 @@ class StatementUnitTest extends \PHPUnit_Framework_TestCase
 
     public function testStatementCanBeDefinedAsRead()
     {
-        $st = Statement::create($this->text(), array(), null, StatementType::READ_ONLY);
+        $st = Statement::create($this->text(), [], null, StatementType::READ_ONLY);
         $this->assertEquals(StatementType::READ_ONLY, $st->statementType());
     }
 
@@ -94,6 +94,6 @@ class StatementUnitTest extends \PHPUnit_Framework_TestCase
 
     private function getParams()
     {
-        return array('id' => 1);
+        return ['id' => 1];
     }
 }

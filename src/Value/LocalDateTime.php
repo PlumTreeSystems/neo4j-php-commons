@@ -51,5 +51,4 @@ class LocalDateTime implements DateTimeConvertible, TypeLocalDateTime
     {
         return $this->nanoseconds;
     }
-
 }

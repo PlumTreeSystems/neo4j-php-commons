@@ -69,5 +69,4 @@ class DateTimeZoned implements DateTimeConvertible, TypeDateTimeZoned
     {
         return $this->zoneId;
     }
-   
 }

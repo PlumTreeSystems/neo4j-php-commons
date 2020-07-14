@@ -40,5 +40,4 @@ class Date implements DateTimeConvertible, TypeDate
     {
         return $this->daysSinceEpoch;
     }
-  
 }

@@ -11,4 +11,7 @@ namespace Neo4j\Common\Collection;
  * file that was distributed with this source code.
  */
 
-class Map extends AbstractCollection {}
+class Map extends AbstractCollection
+{
+
+}
