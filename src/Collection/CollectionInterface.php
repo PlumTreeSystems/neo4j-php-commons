@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Collection;
+namespace Neo4j\Common\Collection;
 
 interface CollectionInterface
 {

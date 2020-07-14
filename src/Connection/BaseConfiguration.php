@@ -1,15 +1,15 @@
 <?php
 
-namespace GraphAware\Common\Connection;
+namespace Neo4j\Common\Connection;
 
-use GraphAware\Common\Driver\ConfigInterface;
+use Neo4j\Common\Driver\ConfigInterface;
 
 /**
  * A shared configuration class between connection. The configuration class is immutable.
  *
  * @author Tobias Nyholm <tobias.nyholm@gmail.com>
  */
-class BaseConfiguration implements ConfigInterface
+class BaseConfiguration
 {
     /**
      * @var array

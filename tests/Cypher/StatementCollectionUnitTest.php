@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Tests\Cypher;
+namespace Neo4j\Common\Tests\Cypher;
 
-use GraphAware\Common\Cypher\Statement;
-use GraphAware\Common\Cypher\StatementCollection;
+use Neo4j\Common\Cypher\Statement;
+use Neo4j\Common\Cypher\StatementCollection;
 
 /**
  * @group unit

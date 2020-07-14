@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Tests\Schema;
+namespace Neo4j\Common\Tests\Schema;
 
-use GraphAware\Common\Schema\ConstraintType;
-use GraphAware\Common\Schema\IndexDefinition;
-use GraphAware\Common\Graph\Label;
+use Neo4j\Common\Schema\ConstraintType;
+use Neo4j\Common\Schema\IndexDefinition;
+use Neo4j\Common\Graph\Label;
 
 /**
  * @group unit

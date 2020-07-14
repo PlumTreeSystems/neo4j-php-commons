@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Result;
+namespace Neo4j\Common\Result;
 
 interface RecordViewInterface extends Record
 {

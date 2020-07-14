@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Type;
+namespace Neo4j\Common\Type;
 
 interface MapAccessor
 {

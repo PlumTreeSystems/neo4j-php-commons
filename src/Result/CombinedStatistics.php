@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Result;
+namespace Neo4j\Common\Result;
 
 class CombinedStatistics implements StatementStatisticsInterface
 {
@@ -74,7 +74,7 @@ class CombinedStatistics implements StatementStatisticsInterface
     protected $constraintsRemoved = 0;
 
     /**
-     * @param \GraphAware\Common\Result\StatementStatisticsInterface $resultStats
+     * @param \Neo4j\Common\Result\StatementStatisticsInterface $resultStats
      */
     public function mergeStats(StatementStatisticsInterface $resultStats)
     {

@@ -9,9 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Driver;
+namespace Neo4j\Common\Driver;
 
-use GraphAware\Common\Transaction\TransactionInterface;
+use Neo4j\Common\Cypher\StatementCollectionInterface;
+use Neo4j\Common\Cypher\StatementInterface;
+use Neo4j\Common\Transaction\TransactionInterface;
 
 interface SessionInterface
 {
@@ -20,9 +22,9 @@ interface SessionInterface
      * @param array       $parameters
      * @param null|string $tag
      *
-     * @return \GraphAware\Common\Result\Result
+     * @return \Neo4j\Common\Result\Result
      */
-    public function run($statement, array $parameters = [], $tag = null);
+    public function run(StatementInterface $statement);
 
     public function close();
 
@@ -38,5 +40,5 @@ interface SessionInterface
      *
      * @return PipelineInterface
      */
-    public function createPipeline($query = null, array $parameters = array(), $tag = null);
+    public function createPipeline(?StatementCollectionInterface $statements = null);
 }

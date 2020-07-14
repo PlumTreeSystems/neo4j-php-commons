@@ -1,14 +1,14 @@
 <?php
 
-namespace GraphAware\Common\Tests\Result;
+namespace Neo4j\Common\Tests\Result;
 
-use GraphAware\Common\Cypher\Statement;
-use GraphAware\Common\Result\ResultCollection;
-use GraphAware\Common\Result\RecordCursorInterface;
+use Neo4j\Common\Cypher\Statement;
+use Neo4j\Common\Result\ResultCollection;
+use Neo4j\Common\Result\RecordCursorInterface;
 
 /**
  * Class ResultCollectionTest
- * @package GraphAware\Common\Tests\Result
+ * @package Neo4j\Common\Tests\Result
  *
  * @group unit
  * @group result

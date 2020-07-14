@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Graph;
+namespace Neo4j\Common\Graph;
 
 class Label
 {

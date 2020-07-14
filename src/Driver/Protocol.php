@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Driver;
+namespace Neo4j\Common\Driver;
 
 use MyCLabs\Enum\Enum;
 

@@ -1,5 +1,5 @@
 {
-    "name": "graphaware/neo4j-common",
+    "name": "plumtreesystems/neo4j-common",
     "description": "Common Utilities library for Neo4j",
     "keywords": [
       "graph", "neo4j", "database", "cypher", "statement"
@@ -10,7 +10,12 @@
         {
             "name": "Christophe Willemsen",
             "email": "christophe@graphaware.com"
-        }
+        },
+        {
+            "name": "Matas Valužis",
+            "email": "matt@plumtreesystems.com",
+            "role": "Maintainer"
+          }
     ],
     "require": {
         "myclabs/php-enum": "^1.4"
@@ -20,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "GraphAware\\Common\\": "src/"
+            "Neo4j\\Common\\": "src/"
         }
     },
     "autoload-dev": {
       "psr-4": {
-        "GraphAware\\Common\\Tests\\": "tests/"
+        "Neo4j\\Common\\Tests\\": "tests/"
       }
     }
 }

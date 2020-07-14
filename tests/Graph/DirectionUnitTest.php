@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Tests\Graph;
+namespace Neo4j\Common\Tests\Graph;
 
-use GraphAware\Common\Graph\Direction;
+use Neo4j\Common\Graph\Direction;
 
 /**
  * @group unit

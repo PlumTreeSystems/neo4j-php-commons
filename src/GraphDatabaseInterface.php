@@ -9,11 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common;
+namespace Neo4j\Common;
 
-use GraphAware\Common\Connection\BaseConfiguration;
-use GraphAware\Common\Driver\ConfigInterface;
-use GraphAware\Common\Driver\DriverInterface;
+use Neo4j\Common\Connection\BaseConfiguration;
+use Neo4j\Common\Driver\DriverInterface;
 
 interface GraphDatabaseInterface
 {
@@ -23,5 +22,5 @@ interface GraphDatabaseInterface
      *
      * @return DriverInterface
      */
-    public static function driver($uri, ConfigInterface $config = null);
+    public static function driver($uri, BaseConfiguration $config = null);
 }

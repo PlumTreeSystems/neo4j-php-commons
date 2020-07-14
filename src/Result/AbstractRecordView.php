@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Result;
+namespace Neo4j\Common\Result;
 
 abstract class AbstractRecordView implements RecordViewInterface
 {
@@ -51,7 +51,7 @@ abstract class AbstractRecordView implements RecordViewInterface
     }
 
     /**
-     * @return mixed[]|\GraphAware\Common\Type\Node[]|\GraphAware\Common\Type\Relationship[]|\GraphAware\Common\Type\Path[]
+     * @return mixed[]|\Neo4j\Common\Type\Node[]|\Neo4j\Common\Type\Relationship[]|\Neo4j\Common\Type\Path[]
      */
     public function values()
     {
@@ -69,7 +69,7 @@ abstract class AbstractRecordView implements RecordViewInterface
     /**
      * @param string $key
      *
-     * @return mixed|\GraphAware\Common\Type\Node|\GraphAware\Common\Type\Relationship|\GraphAware\Common\Type\Path|
+     * @return mixed|\Neo4j\Common\Type\Node|\Neo4j\Common\Type\Relationship|\Neo4j\Common\Type\Path|
      */
     public function value($key)
     {
@@ -83,7 +83,7 @@ abstract class AbstractRecordView implements RecordViewInterface
     /**
      * @param $index
      *
-     * @return mixed|\GraphAware\Common\Type\Node|\GraphAware\Common\Type\Relationship|\GraphAware\Common\Type\Path
+     * @return mixed|\Neo4j\Common\Type\Node|\Neo4j\Common\Type\Relationship|\Neo4j\Common\Type\Path
      */
     public function valueByIndex($index)
     {
@@ -95,7 +95,7 @@ abstract class AbstractRecordView implements RecordViewInterface
     }
 
     /**
-     * @return \GraphAware\Common\Result\AbstractRecordView
+     * @return \Neo4j\Common\Result\AbstractRecordView
      */
     public function record()
     {

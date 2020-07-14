@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Schema;
+namespace Neo4j\Common\Schema;
 
-use GraphAware\Common\Graph\Label;
+use Neo4j\Common\Graph\Label;
 
 class SchemaDefinition
 {

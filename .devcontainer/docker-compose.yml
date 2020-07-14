@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  php-container:
+    volumes:
+      - ..:/app:rw,cached
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+   
+

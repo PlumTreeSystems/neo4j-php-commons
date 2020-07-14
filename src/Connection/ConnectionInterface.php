@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Connection;
+namespace Neo4j\Common\Connection;
 
-use GraphAware\Common\Driver\DriverInterface;
+use Neo4j\Common\Driver\DriverInterface;
 
 interface ConnectionInterface
 {

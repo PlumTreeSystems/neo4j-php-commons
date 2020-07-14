@@ -1,10 +1,10 @@
 <?php
 
-namespace GraphAware\Common\Tests\Collection;
+namespace Neo4j\Common\Tests\Collection;
 
-use GraphAware\Common\Collection\ArrayList;
-use GraphAware\Common\Collection\Map;
-use GraphAware\Common\Collections;
+use Neo4j\Common\Collection\ArrayList;
+use Neo4j\Common\Collection\Map;
+use Neo4j\Common\Collections;
 
 class CollectionsTest extends \PHPUnit_Framework_TestCase
 {

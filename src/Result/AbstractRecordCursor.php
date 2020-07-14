@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Result;
+namespace Neo4j\Common\Result;
 
-use GraphAware\Common\Cypher\StatementInterface;
+use Neo4j\Common\Cypher\StatementInterface;
 
 abstract class AbstractRecordCursor implements RecordCursorInterface
 {
     /**
-     * @var \GraphAware\Common\Cypher\StatementInterface
+     * @var \Neo4j\Common\Cypher\StatementInterface
      */
     protected $statement;
 

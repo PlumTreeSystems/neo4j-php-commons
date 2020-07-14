@@ -1,9 +1,9 @@
 <?php
 
-namespace GraphAware\Common\Tests\Result;
+namespace Neo4j\Common\Tests\Result;
 
-use GraphAware\Common\Result\AbstractRecordCursor;
-use GraphAware\Common\Result\Record;
+use Neo4j\Common\Result\AbstractRecordCursor;
+use Neo4j\Common\Result\Record;
 
 class RecordCursor extends AbstractRecordCursor
 {

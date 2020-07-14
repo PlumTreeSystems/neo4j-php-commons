@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Tests\Result;
+namespace Neo4j\Common\Tests\Result;
 
-use GraphAware\Common\Result\StatementStatistics;
-use GraphAware\Common\Result\StatementStatisticsInterface;
+use Neo4j\Common\Result\StatementStatistics;
+use Neo4j\Common\Result\StatementStatisticsInterface;
 use InvalidArgumentException;
 
 /**

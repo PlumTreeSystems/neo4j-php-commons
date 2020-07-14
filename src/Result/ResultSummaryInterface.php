@@ -9,20 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Result;
+namespace Neo4j\Common\Result;
 
-use GraphAware\Common\Cypher\StatementInterface;
-use GraphAware\Common\Cypher\StatementType;
+use Neo4j\Common\Cypher\StatementInterface;
+use Neo4j\Common\Cypher\StatementType;
 
 interface ResultSummaryInterface
 {
     /**
-     * @param \GraphAware\Common\Cypher\StatementInterface $statement
+     * @param \Neo4j\Common\Cypher\StatementInterface $statement
      */
     public function __construct(StatementInterface $statement);
 
     /**
-     * @return \GraphAware\Common\Cypher\StatementInterface
+     * @return \Neo4j\Common\Cypher\StatementInterface
      */
     public function statement();
 

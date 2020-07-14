@@ -1,6 +1,6 @@
 <?php
 
-namespace GraphAware\Common\Collection;
+namespace Neo4j\Common\Collection;
 
 /**
  * This file is part of the GraphAware Neo4j Common package.

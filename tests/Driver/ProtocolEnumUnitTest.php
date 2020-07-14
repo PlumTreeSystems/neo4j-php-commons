@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Tests\Protocol;
+namespace Neo4j\Common\Tests\Protocol;
 
-use GraphAware\Common\Driver\Protocol;
+use Neo4j\Common\Driver\Protocol;
 
 /**
  * @group unit

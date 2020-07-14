@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Cypher;
+namespace Neo4j\Common\Cypher;
 
 interface StatementInterface
 {
@@ -58,4 +58,11 @@ interface StatementInterface
      * @return StatementInterface
      */
     public function withUpdatedParameters(array $parameters);
+
+    /**
+     * @param array $metaData
+     *
+     * @return StatementInterface
+     */
+    public function withMetaData(array $metaData);
 }

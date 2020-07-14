@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Result;
+namespace Neo4j\Common\Result;
 
 interface Record
 {
@@ -63,7 +63,7 @@ interface Record
      *
      * @param string $key
      *
-     * @return \GraphAware\Common\Type\Node
+     * @return \Neo4j\Common\Type\Node
      */
     public function nodeValue($key);
 
@@ -73,7 +73,7 @@ interface Record
      *
      * @param string $key
      *
-     * @return \GraphAware\Common\Type\Relationship
+     * @return \Neo4j\Common\Type\Relationship
      */
     public function relationshipValue($key);
 
@@ -83,7 +83,7 @@ interface Record
      *
      * @param string $key
      *
-     * @return \GraphAware\Common\Type\Path
+     * @return \Neo4j\Common\Type\Path
      */
     public function pathValue($key);
 

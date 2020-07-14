@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Tests\Graph;
+namespace Neo4j\Common\Tests\Graph;
 
-use GraphAware\Common\Graph\Node;
-use GraphAware\Common\Graph\Label;
-use GraphAware\Common\Graph\NodeInterface;
-use GraphAware\Common\Graph\PropertyBagInterface;
-use GraphAware\Common\Graph\Relationship;
-use GraphAware\Common\Graph\RelationshipType;
+use Neo4j\Common\Graph\Node;
+use Neo4j\Common\Graph\Label;
+use Neo4j\Common\Graph\NodeInterface;
+use Neo4j\Common\Graph\PropertyBagInterface;
+use Neo4j\Common\Graph\Relationship;
+use Neo4j\Common\Graph\RelationshipType;
 use \InvalidArgumentException;
 
 /**

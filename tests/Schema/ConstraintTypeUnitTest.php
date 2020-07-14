@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Tests\Schema;
+namespace Neo4j\Common\Tests\Schema;
 
-use GraphAware\Common\Schema\ConstraintType;
+use Neo4j\Common\Schema\ConstraintType;
 
 /**
  * @group unit

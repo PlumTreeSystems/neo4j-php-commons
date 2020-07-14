@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Transaction;
+namespace Neo4j\Common\Transaction;
 
-use GraphAware\Common\Cypher\Statement;
-use GraphAware\Common\Cypher\StatementInterface;
-use GraphAware\Common\Result\Result;
-use GraphAware\Common\Result\ResultCollection;
+use Neo4j\Common\Cypher\Statement;
+use Neo4j\Common\Cypher\StatementInterface;
+use Neo4j\Common\Result\Result;
+use Neo4j\Common\Result\ResultCollection;
 
 interface TransactionInterface
 {

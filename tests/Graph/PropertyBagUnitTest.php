@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Tests\Graph;
+namespace Neo4j\Common\Tests\Graph;
 
-use GraphAware\Common\Graph\PropertyBag;
+use Neo4j\Common\Graph\PropertyBag;
 use \InvalidArgumentException;
 use \ArrayIterator;
 

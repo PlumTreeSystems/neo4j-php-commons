@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Cypher;
+namespace Neo4j\Common\Cypher;
 
 interface StatementCollectionInterface
 {

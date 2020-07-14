@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Transaction;
+namespace Neo4j\Common\Transaction;
 
 use MyCLabs\Enum\Enum;
 

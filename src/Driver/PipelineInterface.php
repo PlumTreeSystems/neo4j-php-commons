@@ -1,18 +1,18 @@
 <?php
 
-namespace GraphAware\Common\Driver;
+namespace Neo4j\Common\Driver;
+
+use Neo4j\Common\Cypher\StatementInterface;
 
 interface PipelineInterface
 {
     /**
-     * @param string $query
-     * @param array  $parameters
-     * @param null   $tag
+     * @param StatementInterface $statement
      */
-    public function push($query, array $parameters = array(), $tag = null);
+    public function push(StatementInterface $statement);
 
     /**
-     * @return \GraphAware\Common\Result\ResultCollection
+     * @return \Neo4j\Common\Result\ResultCollection
      */
     public function run();
 }

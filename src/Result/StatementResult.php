@@ -1,6 +1,6 @@
 <?php
 
-namespace GraphAware\Common\Result;
+namespace Neo4j\Common\Result;
 
 /*
  * This file is part of the GraphAware Neo4j Common package.
@@ -11,7 +11,7 @@ namespace GraphAware\Common\Result;
  * file that was distributed with this source code.
  */
 
-use GraphAware\Common\Cypher\StatementInterface;
+use Neo4j\Common\Cypher\StatementInterface;
 
 interface StatementResult
 {

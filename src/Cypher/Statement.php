@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common\Cypher;
+namespace Neo4j\Common\Cypher;
 
 class Statement implements StatementInterface
 {
@@ -22,6 +22,11 @@ class Statement implements StatementInterface
      * @var array
      */
     protected $parameters;
+
+     /**
+     * @var array
+     */
+    protected $metaData;
 
     /**
      * @var string|null
@@ -39,11 +44,12 @@ class Statement implements StatementInterface
      * @param string|null $tag
      * @param StatementType
      */
-    private function __construct($text, array $parameters = array(), $tag = null, StatementType $statementType)
+    private function __construct($text, array $parameters = [], $tag = null, StatementType $statementType, $metaData)
     {
         $this->text = (string) $text;
         $this->parameters = $parameters;
         $this->type = $statementType;
+        $this->metaData = $metaData;
 
         if (null !== $tag) {
             $this->tag = (string) $tag;
@@ -58,14 +64,14 @@ class Statement implements StatementInterface
      *
      * @return Statement
      */
-    public static function create($text, array $parameters = array(), $tag = null, $statementType = StatementType::READ_WRITE)
+    public static function create($text, array $parameters = [], $tag = null, $statementType = StatementType::READ_WRITE, $metaData = [])
     {
         if (!StatementType::isValid($statementType)) {
             throw new \InvalidArgumentException(sprintf('Value %s is invalid as statement type, possible values are %s', $statementType, json_encode(StatementType::keys())));
         }
         $type = new StatementType($statementType);
 
-        return new self($text, $parameters, $tag, $type);
+        return new self($text, $parameters, $tag, $type, $metaData);
     }
 
     /**
@@ -73,13 +79,13 @@ class Statement implements StatementInterface
      * @param array       $parameters
      * @param string|null $tag
      *
-     * @return \GraphAware\Common\Cypher\Statement
+     * @return \Neo4j\Common\Cypher\Statement
      */
-    public static function prepare($text, array $parameters = array(), $tag = null)
+    public static function prepare($text, array $parameters = [], $tag = null, $metaData = [])
     {
         $type = new StatementType(StatementType::READ_WRITE);
 
-        return new self($text, $parameters, $tag, $type);
+        return new self($text, $parameters, $tag, $type, $metaData);
     }
 
     /**
@@ -103,7 +109,7 @@ class Statement implements StatementInterface
      */
     public function withText($text)
     {
-        return new self($text, $this->parameters, $this->tag, $this->type);
+        return new self($text, $this->parameters, $this->tag, $this->type, $this->metaData);
     }
 
     /**
@@ -111,7 +117,15 @@ class Statement implements StatementInterface
      */
     public function withParameters(array $parameters)
     {
-        return new self($this->text, $parameters, $this->tag, $this->type);
+        return new self($this->text, $parameters, $this->tag, $this->type, $this->metaData);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function withMetaData(array $metaData)
+    {
+        return new self($this->text, $this->parameters, $this->tag, $this->type, $metaData);
     }
 
     /**
@@ -121,7 +135,7 @@ class Statement implements StatementInterface
     {
         $parameters = array_merge($this->parameters, $parameters);
 
-        return new self($this->text, $parameters, $this->tag, $this->type);
+        return new self($this->text, $parameters, $this->tag, $this->type, $this->metaData);
     }
 
     /**
@@ -147,4 +161,13 @@ class Statement implements StatementInterface
     {
         return $this->type;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function metaData()
+    {
+        return $this->metaData;
+    }
+
 }

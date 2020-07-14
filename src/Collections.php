@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace GraphAware\Common;
+namespace Neo4j\Common;
 
-use GraphAware\Common\Collection\ArrayList;
-use GraphAware\Common\Collection\Map;
+use Neo4j\Common\Collection\ArrayList;
+use Neo4j\Common\Collection\Map;
 
 /**
  * Helper class for creating wrappers around arrays as there is no possibility in php
